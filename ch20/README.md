@@ -90,7 +90,9 @@ I also modified the workflow as below. You should modifiy below properties.
 
 Setup BCO Hive Table
 ----------
-You should create BCO Table! Please see bco.q and bco.txt files.
+You should create BCO Table before you run workflow! Please see bco.q and bco.txt files.
+$ hive -f bco.q
+
 
 
 Copy files
@@ -125,4 +127,4 @@ $ oozie job -oozie http://localhost:11000/oozie -config myapp/job/job.properties
 Hue and Oozie
 ------------
 Please try Hue
-<img src="https://github.com/kawamon/hive_book/blob/master/ch20/hue_oozie.png" alt="Hue and Oozie" title="Hue and Oozie">
+<img src="http://github.com/kawamon/hive_book/blob/master/ch20/hue_oozie.png" alt="Hue and Oozie" title="Hue and Oozie">
