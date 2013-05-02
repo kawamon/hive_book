@@ -1,0 +1,47 @@
+<workflow-app xmlns="uri:oozie:workflow:0.2" name="java-main-wf">
+    <start to="create-node"/>
+    <action name="create-node">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>com.m6d.oozie.HiveServiceBAction</main-class>
+            <arg>localhost</arg>
+            <arg>10000</arg>
+            <arg>CREATE TABLE IF NOT EXISTS zz_zz_abc (a int, b int)</arg>
+        </java>
+        <ok to="query_node"/>
+        <error to="fail"/>
+    </action>
+
+    <action name="query_node">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>com.m6d.oozie.HiveServiceBAction</main-class>
+            <arg>localhost</arg>
+            <arg>10000</arg>
+            <arg>INSERT OVERWRITE TABLE zz_zz_abc SELECT dma_code,site_id
+            FROM BCO WHERE dt=20120426 AND offer=4159 LIMIT 10</arg>
+        </java>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+    <kill name="fail">
+        <message>Java failed, error message
+        [${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+</workflow-app>

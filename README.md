@@ -1,2 +1,2 @@
-hive_book
+Programming Hive workarounds
 =========
