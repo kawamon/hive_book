@@ -125,4 +125,4 @@ $ oozie job -oozie http://localhost:11000/oozie -config myapp/job/job.properties
 Hue and Oozie
 ------------
 Please try Hue
-![alt text](https://github.com/kawamon/hive_book/blob/master/ch20/hue_oozie.png)
+<img src="https://github.com/kawamon/hive_book/blob/master/ch20/hue_oozie.png" alt="Hue and Oozie" title="Hue and Oozie">
