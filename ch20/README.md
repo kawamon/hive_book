@@ -7,14 +7,14 @@ Build Application
 -----
 GIT Clone 'Fixed' git.
 
-$ git clone https://github.com/kawamon/m6d_oozie.git
-$ cd m6d_oozie;
-$ mvn install
+$ git clone https://github.com/kawamon/m6d_oozie.git<br />
+$ cd m6d_oozie<br />
+$ mvn install<br />
 
-$ mkdir -p myapp/lib
-$ cp $HIVE_HOME/lib/*.jar myapp/lib
-$ cp m6d_oozie/target/m6d_oozie-2.0.0-SNAPSHOT.jar myapp/lib/
-$ cp hive_test/target/hive_test-4.0.0-SNAPSHOT.jar myapp/lib/
+$ mkdir -p myapp/lib<br />
+$ cp $HIVE_HOME/lib/*.jar myapp/lib<br />
+$ cp m6d_oozie/target/m6d_oozie-2.0.0-SNAPSHOT.jar myapp/lib/<br />
+$ cp hive_test/target/hive_test-4.0.0-SNAPSHOT.jar myapp/lib/<br />
 
 
 job.properties
