@@ -98,17 +98,17 @@ $ hive -f bco.q
 Copy files
 ----------
 Copy the job.properties and the workflow.xml into correct directory.
-myapp
-└── job
-    ├── job.properties
-    ├── lib
-    │   ├── antlr-runtime-3.0.1.jar
-    │           :
-    │   ├── hive_test-4.0.0-SNAPSHOT.jar
-    │           :
-    │   ├── m6d_oozie-2.0.0-SNAPSHOT.jar
-    │   └── zookeeper-3.4.3.jar
-    └── workflow.xml
+myapp <br />
+└── job <br />
+    ├── job.properties <br />
+    ├── lib <br />
+    │   ├── antlr-runtime-3.0.1.jar <br />
+    │           : <br />
+    │   ├── hive_test-4.0.0-SNAPSHOT.jar <br />
+    │           : <br />
+    │   ├── m6d_oozie-2.0.0-SNAPSHOT.jar <br />
+    │   └── zookeeper-3.4.3.jar <br />
+    └── workflow.xml <br />
 
 
 
