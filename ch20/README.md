@@ -26,12 +26,12 @@ I modified the job.properties as below. You should modifiy below properties.
 
 Here is my sample.
 
-nameNode=hdfs://localhost:8020
-jobTracker=localhost:8021
-queueName=default
-baseDir=${nameNode}/user/${user.name}/myapp
-oozie.wf.application.path=${baseDir}/job
-oozie.libpath=${oozie.wf.application.path}/lib
+nameNode=hdfs://localhost:8020<br/>
+jobTracker=localhost:8021<br/>
+queueName=default<br/>
+baseDir=${nameNode}/user/${user.name}/myapp<br/>
+oozie.wf.application.path=${baseDir}/job<br/>
+oozie.libpath=${oozie.wf.application.path}/lib<br/>
 
 workflow.xml
 -----
