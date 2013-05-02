@@ -116,6 +116,11 @@ Upload files into HDFS
 ----------
 $ hadoop fs -put myapp
 
+Run Hiveserver
+------------
+You have to run hiveserver because this Java application connet to it.
+$ hive --service hiveserver
+
 
 Run Oozie workflow
 ------------
