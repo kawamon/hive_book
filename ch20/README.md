@@ -121,3 +121,8 @@ Run Oozie workflow
 
 $ oozie job -oozie http://localhost:11000/oozie -config myapp/job/job.properties -auth simple -run
 
+
+Hue and Oozie
+------------
+Please try Hue
+![alt text](https://github.com/kawamon/hive_book/blob/master/ch20/hue_oozie.png)
